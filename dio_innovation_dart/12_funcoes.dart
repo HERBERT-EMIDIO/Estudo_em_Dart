@@ -23,23 +23,23 @@ void main() {
   switch (operacao) {
     case '1':
       print('Operação escolhada ==> Adição');
-      var soma = numero1 + numero2;
-      print('Resultado: $numero1 + $numero2 = $soma');
+      var resultado = numero1 + numero2;
+      print('Resultado: $numero1 + $numero2 = $resultado');
       break;
     case '2':
       print('Operação escolhada ==> Subitração');
-      var soma = numero1 - numero2;
-      print('Resultado: $numero1 - $numero2 = $soma');
+      var resultado = numero1 - numero2;
+      print('Resultado: $numero1 - $numero2 = $resultado');
       break;
     case '3':
       print('Operação escolhada ==> Multiplicação');
-      var soma = numero1 * numero2;
-      print('Resultado: $numero1 X $numero2 = $soma');
+      var resultado = numero1 * numero2;
+      print('Resultado: $numero1 X $numero2 = $resultado');
       break;
     case '4':
       print('Operação escolhada ==> Divisão');
-      var soma = numero1 / numero2;
-      print('Resultado: $numero1 / $numero2 = $soma');
+      var resultado = numero1 / numero2;
+      print('Resultado: $numero1 / $numero2 = $resultado');
       break;
     case '5':
       print('Saindo do app ... Obrigado!!!');

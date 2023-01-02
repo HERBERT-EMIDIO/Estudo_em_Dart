@@ -1,5 +1,9 @@
 void main() {
-  var contador = 0;
-  var total = 10;
-  while (condition) {}
+  var contador = true;
+
+  while (contador == true) {
+    print(
+        'imprimir sem fim !!! sorte que existe um break logo depos desta linha de cod...');
+    break;
+  }
 }
