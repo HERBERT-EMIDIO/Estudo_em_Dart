@@ -1,8 +1,16 @@
 //classes/projetos--> class + NomeDaClasse + {}
 class Date {
-  int? dia;
-  int? mes;
-  int? ano;
+  dynamic dia;
+  dynamic mes;
+  dynamic ano;
+
+  
+  Date([this.dia, this.mes, this.ano]);//opicional e posicional
+  Date.com(
+      {this.ano = 'ano de Hoje',
+      this.dia = 'dia de Hoje',
+      this.mes = 'mes de Hoje'}); //construtor nomeado e não posicional.
+
 //uma class que possui um método que retorne um print
   obterPrintMetodo() {
     print('Método que retorna data: $dia/$mes/$ano');
@@ -31,8 +39,8 @@ void main() {
   print(
       'Data de aniversário: ${dataAniversario.dia}/ ${dataAniversario.mes}/ ${dataAniversario.ano}');
 //chamando com método:
-  print('chamando o método obterPrintMetodo:');
-  dataAniversario.obterPrintMetodo();
+  print('+++chamando o método obterPrintMetodo:+++');
+  dataAniversario.obterPrintMetodo(); //Método que retorna data: 28/7/1983
 
   print('========================================');
 
@@ -41,7 +49,7 @@ void main() {
   dataCompra.dia = 01;
   dataCompra.mes = 01;
   dataCompra.ano = 2023;
-  print('Data da compra $dataCompra');
+  print('Data da compra $dataCompra'); //Data da compra qualquer coisa
   print('Data da compra ${dataCompra.dia}/${dataCompra.mes}/${dataCompra.ano}');
   print('===== Chamando o método obterPrintMetodo: =====');
   dataAniversario.obterPrintMetodo();
@@ -49,7 +57,5 @@ void main() {
   print('========== chamando só o Método ==========');
   //método obter
   Date dataComMetodo = Date();
-  dataComMetodo.obterPrintMetodo();
-
-  print('========================================');
+  dataComMetodo.obterPrintMetodo(); //Método que retorna data: null/null/null
 }

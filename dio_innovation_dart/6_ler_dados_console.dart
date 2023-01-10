@@ -4,7 +4,7 @@ void main() {
   // entrada de dados na mesma linha de código
   stdout.write('Informa a primeira nota: ');
   String entradaDadosNota = stdin.readLineSync()!;
-  int nota1 = int.parse(entradaDadosNota ?? '0');
+  int nota1 = int.parse(entradaDadosNota);
   print("Primeira nota digitada: $nota1");
   print('');
 

@@ -23,12 +23,12 @@ void main() {
   switch (operacao) {
     case '1':
       print('Operação escolhada ==> Adição');
-      var resultado = numero1 + numero2;
+      var resultado = soma(numero1, numero2);
       print('Resultado: $numero1 + $numero2 = $resultado');
       break;
     case '2':
       print('Operação escolhada ==> Subitração');
-      var resultado = numero1 - numero2;
+      var resultado = subtrair(numero1, numero2);
       print('Resultado: $numero1 - $numero2 = $resultado');
       break;
     case '3':
@@ -46,3 +46,22 @@ void main() {
       break;
   }
 }
+
+
+
+double soma(double num1, double num2) {
+  return num1 + num2;
+}
+
+double subtrair(double num1, double num2) {
+  return num1 - num2;
+}
+
+double multiplicar(double num1, double num2) {
+  return num1 * num2;
+}
+
+double dividir(double num1, double num2) {
+  return num1 / num2;
+}
+
